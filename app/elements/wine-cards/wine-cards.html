@@ -1,0 +1,126 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+
+<dom-module id="wine-cards">
+
+    <style>
+        .card {
+          --paper-card-header-color: var(--paper-grey-900);
+
+          --paper-card-header-text: {
+            font-weight: 400;
+            position: initial;
+          };
+
+          --paper-card: {
+            margin-bottom: 16px;
+            border-radius: 2px;
+          }
+        }
+        @media all and (min-width: 1281px) and (max-width: 1600px) {
+          .card {
+
+            --paper-card: {
+              width: calc(50% - 20px);
+              margin: 8px;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+
+        }
+
+    </style>
+
+    <template>
+<div class="card-container">
+
+
+      <paper-card heading="Vinos blancos jóvenes aromáticos" class="card"
+                  image="../../images/wine-types/blancos-jovenes-aromaticos.jpg">
+        <div class="card-content">
+          Estos vinos conservan sus cualidades aromáticas y características primarias. Su ligereza y acidez, así como sus aromas a flores y frutas son su carta de presentación.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos blancos secos con madera" class="card"
+                  image="../../images/wine-types/blancos-secos-madera.jpg">
+        <div class="card-content">
+          Un vino blanco seco alcanza esta categoría tras haber tenido contacto prolongado con madera, generalmente de roble.
+        </div>
+
+      </paper-card>
+
+      <paper-card heading="Vinos blancos secos naturales" class="card"
+                  image="../../images/wine-types/blancos-secos-naturales.jpg">
+        <div class="card-content">
+          Estos vinos blancos tienen más estructura que los blancos jóvenes aromáticos así como buen equilibrio, acidez y alcohol, lo que hace que tarden en evolucionar y envejecer.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos espumosos" class="card"
+                  image="../../images/wine-types/espumosos.jpg">
+        <div class="card-content">
+          Estos vinos se definen por conservar de forma natural gas (anhídrido carbónico) con una presión superior a 2,5 bares. Sin duda, el espumoso más famoso en el mundo es el champagne.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos generosos secos" class="card"
+                  image="../../images/wine-types/generosos-secos.jpg">
+        <div class="card-content">
+          Alcanzan una alta graduación de alcohol, entre 14° y 23°, derivada del tipo de uva y con una gran amplitud y aromas, como de cuerpo y estructura.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos rosados" class="card"
+                  image="../../images/wine-types/rosados.jpg">
+        <div class="card-content">
+          El color de estos vinos se obtiene de uvas tintas fermentadas en leve contacto con las partes sólidas de uva y racimo, que contienen las sustancias naturales con colorantes.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos tintos jóvenes" class="card"
+                  image="../../images/wine-types/tintos-jovenes.jpg">
+        <div class="card-content">
+          El valor principal de los vinos tintos jóvenes es la conservación de sus características primarias. Entre ellas destacan su color, aroma, acidez y la jugosidad de sus taninos.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos tintos roble" class="card"
+                  image="../../images/wine-types/tintos-roble.jpg">
+        <div class="card-content">
+          Los vinos tintos de roble suelen ser caldos muy sabrosos y golosos. Sus notas a fruta y barrica le aportan elegancia, consistencia y permiten una vida más larga.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos tintos de crianza" class="card"
+                  image="../../images/wine-types/tintos-crianza.jpg">
+        <div class="card-content">
+          Son los tintos más consumidos en España. El proceso de crianza aporta serenidad y pule las características de estos reputados caldos.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos tintos reserva" class="card"
+                  image="../../images/wine-types/tintos-reserva.jpg">
+        <div class="card-content">
+          Estos caldos se consideran reserva en España después de un periodo de crianza en roble y botella de 36 meses como mínimo, con una duración mínima de 12 meses en la barrica de roble.
+        </div>
+      </paper-card>
+
+      <paper-card heading="Vinos tintos gran reserva" class="card"
+                  image="../../images/wine-types/tintos-gran-reserva.jpg">
+        <div class="card-content">
+          Estos vinos se crían durante al menos 24 meses en madera de roble. Después, envejecen en botella al menos 36 meses, adoptando las características de estos caldos rotundos y nobles.</div>
+      </paper-card>
+</div>
+
+    </template>
+
+    <script>
+        Polymer({ is: 'wine-cards' });
+    </script>
+
+</dom-module>

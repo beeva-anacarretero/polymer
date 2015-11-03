@@ -1,0 +1,139 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/firebase-element/firebase-collection.html">
+<link rel="import" href="../../bower_components/firebase-element/firebase-document.html">
+
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
+
+<link rel="stylesheet" href="../../bower_components/paper-styles/demo.css">
+
+<dom-module id="re-wine">
+
+    <template is="dom-bind">
+        <style include="app-theme"></style>
+        <style>
+            :host {
+                display: block;
+            }
+            /*paper-material {
+                border-radius: 2px;
+                height: 100%;
+                padding: 16px 0 16px 0;
+                width: calc(98.66% - 16px);
+                margin: 5px auto;
+                background: white;
+            }
+            @media (min-width: 601px) {
+
+                paper-material {
+                    width: calc(98% - 46px);
+                    margin-bottom: 5px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+
+            @media (max-width: 600px) {
+
+                paper-material {
+                    width: calc(98% - 46px);
+                    margin-bottom: 5px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }*/
+        </style>
+        <firebase-collection
+                order-by-child="height"
+                location="https://blinding-heat-661.firebaseio.com/vinos"
+                data="{{vinos}}"></firebase-collection>
+        <template is="dom-repeat" items="[[vinos]]" as="vino">
+
+            <paper-material class="style-scope paper-card x-scope paper-material-0" elevation="1">
+                <paper-card class="pink x-scope paper-card-1">
+
+                    <div class="header style-scope paper-card">
+                        <img class="style-scope paper-card" src="http://placehold.it/350x150">
+                        <div class="title-text over-image style-scope paper-card">[[vino.nombre]]</div>
+                    </div>
+
+
+                    <div class="card-content">
+                        Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+                    </div>
+                    <div class="card-actions">
+                        <paper-button role="button" tabindex="0" animated="" aria-disabled="false" class="x-scope paper-button-0">
+
+
+                            No
+                        </paper-button>
+                        <paper-button role="button" tabindex="0" animated="" aria-disabled="false" class="x-scope paper-button-0">
+
+
+                            Yes
+                        </paper-button>
+                    </div>
+
+                </paper-card>
+            </paper-material>
+
+        </template>
+    </template>
+
+    <script>
+        (function() {
+            'use strict';
+
+            Polymer({
+                is: 're-wine'
+            });
+        })();
+    </script>
+
+</dom-module>
+
+<!--
+
+ <paper-card heading=[[vino.nombre]] class="pink x-scope paper-card-1" image="http://placehold.it/350x150" aria-label=[[vino.nombre]]>
+
+
+        <paper-material class="style-scope paper-card x-scope paper-material-0" elevation="1">
+
+
+        <div class="header style-scope paper-card">
+            <iron-image sizing="contain" preload="" fade="" role="img" style="background-image: url(http://media.ideavinos.com/media/catalog/product/cache/2/small_image/73x230/9df78eab33525d08d6e5fb8d27136e95/v/i/vino-valenciso-reserva.jpg); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;"></iron-image>
+            <div class="title-text over-image style-scope paper-card">
+                <div>[[vino.nombre]]</div>
+                <div><span>Denominación: </span><span>[[vino.denominacion]]</span></div>
+            </div>
+        </div>
+
+
+        <div class="card-content">
+            Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+        </div>
+        <div class="card-actions">
+            <paper-button role="button" tabindex="0" animated="" aria-disabled="false" class="x-scope paper-button-0">
+
+
+                No
+            </paper-button>
+            <paper-button role="button" tabindex="0" animated="" aria-disabled="false" class="x-scope paper-button-0">
+
+
+                Yes
+            </paper-button>
+        </div>
+        </paper-material>
+    </paper-card>
+
+
+
+
+
+
+
+-->

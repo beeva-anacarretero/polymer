@@ -1,0 +1,23 @@
+{
+    "": [
+        {
+            "nombre": "Valenciso - Reserva 2007",
+            "tipo":"tinto",
+            "puntuacionMedia": 4,
+            "productor": "Compañía Bodeguera de Valencisco",
+            "denominación": "La Rioja (España)",
+            "variedad": "tempranillo",
+            "descripcion": "18 meses en barrica de roble francés y americano .  Envejecido durante 18 meses en barricas nuevas de roble francés y americano (renovado por tercios anualmente) y posteriormente en botella durante 2 años.",
+            "image": "https://blinding-heat-661.firebaseio.com/vinos"
+        },
+        {
+            "nombre": "Sierra Salinas - Puerto Salinas 2005",
+            "tipo":"tinto",
+            "puntuacionMedia": 4,
+            "productor": "Bodegas Sierra Salinas",
+            "denominación": "Alicante (España)",
+            "variedad": "Monastrell, Cabernet Sauvignon",
+            "descripcion": "Monastrell, Cabernet Sauvignon y Garnacha Tintorera. 15 meses en barrica de roble francés"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+<link rel="import" href="../../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+
+<link rel="import" href="../wine-cards/wine-cards.html">
+
+
+<dom-module id="card-layout">
+
+    <style>
+        .card-container {
+            @apply(--layout-vertical);
+            @apply(--layout-wrap);
+            width: 90%;
+            margin: 8px auto;
+        }
+        .flex-card {
+            @apply(--layout-flex);
+        }
+        @media all and (min-width: 841px) and (max-width: 1280px) {
+          .card-container {
+            @apply(--layout-horizontal);
+            @apply(--layout-wrap);
+            width: 90%;
+            margin: 8px auto;
+          }
+
+          .flex-card {
+            @apply(--layout-flex-6);
+          }
+        }
+
+    </style>
+
+    <template>
+        <div class="card-container">
+            <div class="flex-card">
+                <div class="card-content">
+                <wine-cards></wine-cards>
+                </div>
+            </div>
+
+        </div>
+    </template>
+
+    <script>
+        Polymer({ is: 'card-layout' });
+    </script>
+
+</dom-module>
